@@ -14,7 +14,7 @@ export default function TeacherClientPage({ fetchNotes, initialNotes }) {
       setNotes([...notes, ...newNotes]);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [notes]);
 
   return (
     <div>
